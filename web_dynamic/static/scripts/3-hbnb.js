@@ -1,7 +1,5 @@
-// const url = 'http://0.0.0.0:5001/api/v1/status/'
-// const urlPS = 'http://0.0.0.0:5001/api/v1/places_search/';
-const url = 'http://54.87.4.219:49915/api/v1/status/';
-const urlPS = 'http://54.87.4.219:49915/api/v1/places_search/';
+const url = 'http://0.0.0.0:5001/api/v1/status/';
+const urlPS = 'http://0.0.0.0:5001/api/v1/places_search/';
 
 function createArticle (place) {
   return `
