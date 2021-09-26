@@ -72,7 +72,6 @@ $(document).ready(() => {
     filters.amenities = Object.keys(checkedAmenities).filter((id) => typeof (checkedAmenities[id]) === 'string');
     filters.states = Object.keys(checkedStates).filter((id) => typeof (checkedStates[id]) === 'string');
     filters.cities = Object.keys(checkedCities).filter((id) => typeof (checkedCities[id]) === 'string');
-    console.log(filters);
     getPlaces(urlPS, filters);
   });
 });
