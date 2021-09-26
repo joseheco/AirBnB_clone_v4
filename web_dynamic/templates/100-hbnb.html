@@ -31,12 +31,12 @@
 		            <h2>{{ state[0].name }}:</h2>
 		            <ul>
 		            {% for city in state[1] %}
-                <li>
-                <input class="cityCheck" type="checkbox" data-id="{{ city.id }}" data-name="{{ city.name }}"> 
+                  <li>
+                    <input class="cityCheck" type="checkbox" data-id="{{ city.id }}" data-name="{{ city.name }}"> 
                 {{ city.name }}</li>
 		            {% endfor %}
+                  </li>
                 </ul>
-		            </li>
 	            {% endfor %}
 	            </ul>
 	          </div>
@@ -48,7 +48,7 @@
 	            <ul>
 	              {% for amenity in amenities %}
 	              <li>
-                <input class="amenityCheck"  data-id="{{ amenity.id }}" data-name="{{ amenity.name  }}"
+                  <input class="amenityCheck"  data-id="{{ amenity.id }}" data-name="{{ amenity.name  }}"
                       type="checkbox">
                       {{ amenity.name }} 
                 </li>
@@ -56,6 +56,19 @@
 	            </ul>
 	          </div>
 	        </div>
+          <div class=reviews>
+            <h2>2 Reviews</h2>
+            <ul>
+                <li>
+                    <h3>From Bob Dylan the 27th January 2017</h3>
+                    <p>Runshi is an epic host. Nothing more I can say. 5 star!</p>
+                </li>
+                <li>
+                    <h3>From Connor the 4th January 2017</h3>
+                    <p>Highly recommended!</p>
+                </li>
+            </ul>
+        </div>
 	        <button type="button">Search</button>
         </section>
           <div class="placesh1"><h1>Places</h1></div>
