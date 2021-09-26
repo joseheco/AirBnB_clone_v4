@@ -57,41 +57,7 @@ $(document).ready(() => {
   inputListeners('.amenityCheck', '.amenities h4', checkedAmenities, [checkedAmenities]);
   inputListeners('.stateCheck', '.locations h4', checkedStates, [checkedStates, checkedCities]);
   inputListeners('.cityCheck', '.locations h4', checkedCities, [checkedStates, checkedCities]);
-  /*
-  $('.amenityCheck').change(function () {
-    const id = $(this).attr('data-id');
-    const name = $(this).attr('data-name');
-    const checked = $(this).is(':checked');
-    checkedAmenities[id] = (checked && name) || null;
 
-    const selected = `${Object.values(checkedAmenities).filter((el) => el !== null).join(', ')}`;
-    $('.amenities h4').text(selected);
-  });
-
-  $('.stateCheck').change(function () {
-    const id = $(this).attr('data-id');
-    const name = $(this).attr('data-name');
-    const checked = $(this).is(':checked');
-    checkedStates[id] = (checked && name) || null;
-
-    console.log(name)
-
-    let selected = `${Object.values(checkedStates).filter((el) => el !== null).join(', ')}`;
-    selected += `${Object.values(checkedCities).filter((el) => el !== null).join(', ')}`;
-    $('.locations h4').text(selected);
-  });
-
-  $('.cityCheck').change(function () {
-    const id = $(this).attr('data-id');
-    const name = $(this).attr('data-name');
-    const checked = $(this).is(':checked');
-    checkedCities[id] = (checked && name) || null;
-
-    let selected = `${Object.values(checkedStates).filter((el) => el !== null).join(', ')}`;
-    selected += `${Object.values(checkedCities).filter((el) => el !== null).join(', ')}`;
-    $('.locations h4').text(selected);
-  });
-*/
   $.get(url, function (data) {
     const cls = 'available';
     const apiStatus = $('div#api_status');
